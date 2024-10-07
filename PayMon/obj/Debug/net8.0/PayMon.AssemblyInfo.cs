@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PayMon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c04555271f348c17e39b9724d4cef0f8d1b1f6aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f323d305d6af98120d72a149f39185e24e433217")]
 [assembly: System.Reflection.AssemblyProductAttribute("PayMon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PayMon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

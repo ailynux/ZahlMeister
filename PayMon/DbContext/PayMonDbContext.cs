@@ -1,12 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using PayMon.Models;
 
-namespace PayMon.DbContext
+namespace PayMon.Data // Changed from PayMon.DbContext to PayMon.Data
 {
-    public class PayMonDbContext : Microsoft.EntityFrameworkCore.DbContext
+    public class PayMonDbContext : DbContext
     {
-        public PayMonDbContext(DbContextOptions<PayMonDbContext> options) : base(options) { }
+        public PayMonDbContext(DbContextOptions<PayMonDbContext> options) : base(options)
+        {
+        }
 
-        public DbSet<Payment> Payments { get; set; }
+        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<Payment> Payments { get; set; } = null!;
     }
 }

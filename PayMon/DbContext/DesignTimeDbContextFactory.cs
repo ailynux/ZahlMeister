@@ -2,8 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System.IO;
+using PayMon.Data; // Updated to match the new namespace
 
-namespace PayMon.DbContext
+namespace PayMon.Data // Changed from PayMon.DbContext to PayMon.Data
 {
     public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<PayMonDbContext>
     {
