@@ -5,13 +5,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PayMon.DbContext;
+using PayMon.Data;
+
 
 #nullable disable
 
 namespace PayMon.Migrations
 {
-    [DbContext(typeof(PayMonDbContext))]
+    [DbContext(typeof(PayMon.Data.PayMonDbContext))] // Fully qualified
     [Migration("20241006195554_UpdatePaymentAmountPrecision")]
     partial class UpdatePaymentAmountPrecision
     {

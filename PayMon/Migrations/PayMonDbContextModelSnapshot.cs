@@ -4,13 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PayMon.DbContext;
+using PayMon.Data;
+
 
 #nullable disable
 
 namespace PayMon.Migrations
 {
-    [DbContext(typeof(PayMonDbContext))]
+  [DbContext(typeof(PayMon.Data.PayMonDbContext))] // Fully qualified
     partial class PayMonDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

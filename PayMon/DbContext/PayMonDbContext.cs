@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PayMon.Models;
 
-namespace PayMon.Data // Changed from PayMon.DbContext to PayMon.Data
+namespace PayMon.Data
 {
     public class PayMonDbContext : DbContext
     {
